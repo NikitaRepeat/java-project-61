@@ -1,12 +1,13 @@
 <a href="https://codeclimate.com/github/NikitaRepeat/hexlet-java/maintainability"><img src="https://api.codeclimate.com/v1/badges/2d9f8b4c61a7d0c05365/maintainability" /></a>
+
 Greet: https://asciinema.org/a/i6ng4vL2xhFsTTB2h8pfenVBe
 
-CLI: https://asciinema.org/a/uSYCfA27NIi4xbQvGlD4I5w4C
+CLI: https://asciinema.org/a/NK9WDLm8baJwUGEXyBc4hfstk
 
-EVEN + CALC: https://asciinema.org/a/k47yqK8eryuawgBS8GakTJKN7
+CALC: https://asciinema.org/a/AyFXKQFkmdMF5UvnDtwtxs40i
 
-GCD: https://asciinema.org/a/k5ENkw9x0NQ2UCY7WSFf5sKza
+GCD: https://asciinema.org/a/jFnvQuFXFHftGBV6RnmUbiDBj
 
-PROGRESSION: https://asciinema.org/a/qiXzSVVMAP5U0D0jJHweyPXch
+PROGRESSION: https://asciinema.org/a/Z1TxohKwM0pKzTjRiGyngxlyE
 
-Prime: https://asciinema.org/a/KcKUcX0TuaUox1fnxXtA6Klp6
+Prime: https://asciinema.org/a/8drRhqs6B5LCtfgEcDtB9JBS1
