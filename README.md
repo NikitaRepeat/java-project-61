@@ -1,4 +1,5 @@
 <a href="https://codeclimate.com/github/NikitaRepeat/hexlet-java/maintainability"><img src="https://api.codeclimate.com/v1/badges/2d9f8b4c61a7d0c05365/maintainability" /></a>
+Greet: https://asciinema.org/a/i6ng4vL2xhFsTTB2h8pfenVBe
 
 CLI: https://asciinema.org/a/uSYCfA27NIi4xbQvGlD4I5w4C
 
