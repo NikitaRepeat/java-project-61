@@ -5,7 +5,7 @@ public class Even {
     public static String evenGame() {
         int randomNumber = (int) (Math.random() * MULTIPLE);
         System.out.println("Question:" + randomNumber);
-        System.out.println("Your answer: ");
+        System.out.print("Your answer: ");
         if (randomNumber % 2 == 0) {
             return "yes";
         } else {
