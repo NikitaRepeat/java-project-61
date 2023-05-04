@@ -8,29 +8,32 @@ import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 public class Engine {
-    private static int choice1 = 1;
-    private static int choice2 = 2;
-    private static int choice3 = 3;
+    private static int CHOICE1 = 1;
+    private static int CHOICE2 = 2;
+    private static int CHOICE3 = 3;
+    private static int CHOICE4 = 4;
+    private static int CHOICE5 = 5;
+    private static int CHOICE6 = 6;
     public static void choiceGames(int choiceUser) {
-        if (choiceUser == 1) {
+        if (choiceUser == CHOICE1) {
             Cli.welcomeUser();
-        } else if (choiceUser == 2) {
+        } else if (choiceUser == CHOICE2) {
             Cli.welcomeUser();
             System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
             game(choiceUser);
-        } else if (choiceUser == 3) {
+        } else if (choiceUser ==CHOICE3) {
             Cli.welcomeUser();
             System.out.println("What is the result of the expression?");
             game(choiceUser);
-        } else if (choiceUser == 4) {
+        } else if (choiceUser == CHOICE4) {
             Cli.welcomeUser();
             System.out.println("Find the greatest common divisor of given numbers.");
             game(choiceUser);
-        } else if (choiceUser == 5) {
+        } else if (choiceUser == CHOICE5) {
             Cli.welcomeUser();
             System.out.println("What number is missing in the progression?");
             game(choiceUser);
-        } else if (choiceUser == 6) {
+        } else if (choiceUser == CHOICE6) {
             Cli.welcomeUser();
             System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
             game(choiceUser);
