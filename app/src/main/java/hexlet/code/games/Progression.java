@@ -16,7 +16,7 @@ public class Progression {
         }
         int memberProgression = (int) (Math.random() * progression.length);
         String replaceMemberValue = progressionString[memberProgression];
-        progressionString[memberProgression] = " .. ";
+        progressionString[memberProgression] = "..";
         String result = Arrays.toString(progressionString).replace("[", "").replace("]", "").replace(",", "");
         System.out.println("Question: " + result);
         System.out.println("Your answer: ");
