@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Progression {
     public static String proGame() {
-        int firstNumber = (int) (Math.random() * 11);
+        int firstNumber = (int) (1 + Math.random() * 10);
         int difference = (int) (1 + Math.random() * 9);
         int[] progression = new int[6 + (int) (Math.random() * 5)];
         String[] progressionString = new String[progression.length];
