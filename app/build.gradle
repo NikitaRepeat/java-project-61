@@ -31,3 +31,6 @@ run {
 checkstyle {
     toolVersion = '9.2.1'
 }
+clean.doFirst {
+    println "Cleaning project..."
+}

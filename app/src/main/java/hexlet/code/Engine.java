@@ -8,9 +8,9 @@ import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 public class Engine {
-    int choice1 = 1;
-    int choice2 = 2;
-    int choice3 = 3;
+    private static int choice1 = 1;
+    private static int choice2 = 2;
+    private static int choice3 = 3;
     public static void choiceGames(int choiceUser) {
         if (choiceUser == 1) {
             Cli.welcomeUser();

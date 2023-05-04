@@ -3,10 +3,10 @@ package hexlet.code.games;
 import java.util.Random;
 
 public class Calc {
+    private static final int MULTIPLE = 100;
     public static String calculator() {
-        int b = 100;
-        int randomNumber1 = (int) (Math.random() * b);
-        int randomNumber2 = (int) (Math.random() * b);
+        int randomNumber1 = (int) (Math.random() * MULTIPLE);
+        int randomNumber2 = (int) (Math.random() * MULTIPLE);
         Random rand = new Random();
         int operation = rand.nextInt(3);
         int result = 0;

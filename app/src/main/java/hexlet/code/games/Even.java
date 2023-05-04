@@ -1,9 +1,9 @@
 package hexlet.code.games;
 
 public class Even {
+    private static final int MULTIPLE = 100;
     public static String evenGame() {
-        int b = 100;
-        int randomNumber = (int) (Math.random() * b);
+        int randomNumber = (int) (Math.random() * MULTIPLE);
         System.out.println("Question:" + randomNumber);
         System.out.println("Your answer: ");
         if (randomNumber % 2 == 0) {

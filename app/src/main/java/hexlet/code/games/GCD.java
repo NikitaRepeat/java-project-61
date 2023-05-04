@@ -1,10 +1,10 @@
 package hexlet.code.games;
 
 public class GCD {
+    private static final int MULTIPLE = 100;
     public static String gcdGame() {
-        int b = 100;
-        int randomNumber1 = (int) (Math.random() * b);
-        int randomNumber2 = (int) (Math.random() * b);
+        int randomNumber1 = (int) (Math.random() * MULTIPLE);
+        int randomNumber2 = (int) (Math.random() * MULTIPLE);
         int gcd = 0;
         System.out.println("Question: " + randomNumber1 + " " + randomNumber2);
         System.out.println("Your answer: ");
