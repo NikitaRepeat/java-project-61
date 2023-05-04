@@ -8,9 +8,11 @@ public class Cli {
     }
     public static void welcomeUser() {
         System.out.println("Welcome to the Brain Games!");
-        System.out.println("May i have your name?");
+        System.out.println("May i have your name? ");
         Scanner scanner = new Scanner(System.in);
-        nameUser = scanner.nextLine();
+        nameUser = scanner.nextLine().toLowerCase();
+        nameUser = nameUser.substring(0, 1).toUpperCase() + nameUser.substring(1);
+        System.out.println();
         System.out.println("Hello, " + nameUser + "!");
     }
 }
