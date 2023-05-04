@@ -6,7 +6,7 @@ public class Progression {
     public static String proGame() {
         int firstNumber = (int) (Math.random() * 11);
         int difference = (int) (1 + Math.random() * 9);
-        int[] progression = new int[5 + (int) (Math.random() * 6)];
+        int[] progression = new int[6 + (int) (Math.random() * 5)];
         String[] progressionString = new String[progression.length];
         progression[0] = firstNumber;
         progressionString[0] = Integer.toString(firstNumber);
@@ -16,8 +16,9 @@ public class Progression {
         }
         int memberProgression = (int) (Math.random() * progression.length);
         String replaceMemberValue = progressionString[memberProgression];
-        progressionString[memberProgression] = ".. ";
-        System.out.println("Question :" + Arrays.toString(progressionString).replace("[", "").replace("]", "").replace("," , ""));
+        progressionString[memberProgression] = " .. ";
+        String result = Arrays.toString(progressionString).replace("[", "").replace("]", "").replace(",", "");
+        System.out.println("Question :" + result);
         System.out.println("Your answer: ");
         return replaceMemberValue;
     }
