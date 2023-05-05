@@ -68,11 +68,14 @@ public class Engine {
             } else {
                 System.out.println(answerUser + " is wrong answer ;(. Correct answer was " + answerRight);
                 System.out.println("Let's try again, " + Cli.getName() + "!");
+                count = 3;
             }
             count += 1;
         }
         if (countRightAnswer == 3) {
             System.out.println("Congratulations, " + Cli.getName() + "!");
+        } else {
+            
         }
     }
 }
