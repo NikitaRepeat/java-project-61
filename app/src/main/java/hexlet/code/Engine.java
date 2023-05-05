@@ -8,32 +8,32 @@ import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 public class Engine {
-    private static int CHOICE1 = 1;
-    private static int CHOICE2 = 2;
-    private static int CHOICE3 = 3;
-    private static int CHOICE4 = 4;
-    private static int CHOICE5 = 5;
-    private static int CHOICE6 = 6;
+    private static int choice1 = 1;
+    private static int choice2 = 2;
+    private static int choice3 = 3;
+    private static int choice4 = 4;
+    private static int choice5 = 5;
+    private static int choice6 = 6;
     public static void choiceGames(int choiceUser) {
-        if (choiceUser == CHOICE1) {
+        if (choiceUser == choice1) {
             Cli.welcomeUser();
-        } else if (choiceUser == CHOICE2) {
+        } else if (choiceUser == choice2) {
             Cli.welcomeUser();
             System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
             game(choiceUser);
-        } else if (choiceUser ==CHOICE3) {
+        } else if (choiceUser == choice3) {
             Cli.welcomeUser();
             System.out.println("What is the result of the expression?");
             game(choiceUser);
-        } else if (choiceUser == CHOICE4) {
+        } else if (choiceUser == choice4) {
             Cli.welcomeUser();
             System.out.println("Find the greatest common divisor of given numbers.");
             game(choiceUser);
-        } else if (choiceUser == CHOICE5) {
+        } else if (choiceUser == choice5) {
             Cli.welcomeUser();
             System.out.println("What number is missing in the progression?");
             game(choiceUser);
-        } else if (choiceUser == CHOICE6) {
+        } else if (choiceUser == choice6) {
             Cli.welcomeUser();
             System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
             game(choiceUser);
@@ -68,7 +68,6 @@ public class Engine {
             } else {
                 System.out.println(answerUser + " is wrong answer ;(. Correct answer was " + answerRight);
                 System.out.println("Let's try again, " + Cli.getName() + "!");
-                count = 4;
             }
             count += 1;
         }
