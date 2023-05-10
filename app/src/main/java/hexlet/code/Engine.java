@@ -14,6 +14,8 @@ public class Engine {
     private static int choice4 = 4;
     private static int choice5 = 5;
     private static int choice6 = 6;
+    private static final int NUMBER_ATTEMPTS = 2;
+
     public static void choiceGames(int choiceUser) {
         if (choiceUser == choice1) {
             Cli.welcomeUser();
@@ -41,12 +43,15 @@ public class Engine {
             System.out.println("Goodbye!");
         }
     }
+
     public static void game(int choiceUser) {
-        boolean check = true;
+        Scanner sc = new Scanner(System.in);
         int count = 0;
-        int countRightAnswer = 0;
         String answerRight = "";
-        while (count < 3) {
+        String answerUser = null;
+        boolean runGame = true;
+        boolean winTitle = false;
+        while (runGame) {
             if (choiceUser == 2) {
                 answerRight = Even.evenGame();
             } else if (choiceUser == 3) {
@@ -60,22 +65,20 @@ public class Engine {
             } else {
                 System.out.println("Goodbye!");
             }
-            Scanner sc = new Scanner(System.in);
-            String answerUser = sc.nextLine();
-            if (answerRight.equals(answerUser)) {
+            answerUser = sc.nextLine();
+            runGame = answerUser.equals(answerRight);
+            if (runGame && count < NUMBER_ATTEMPTS) {
                 System.out.println("Correct!");
-                countRightAnswer += 1;
+                count++;
             } else {
-                System.out.println(answerUser + " is wrong answer ;(. Correct answer was " + answerRight);
-                System.out.println("Let's try again, " + Cli.getName() + "!");
-                count = 3;
+                winTitle = answerUser.equals(answerRight);
+                runGame = false;
             }
-            count += 1;
         }
-        if (countRightAnswer == 3) {
-            System.out.println("Congratulations, " + Cli.getName() + "!");
-        } else {
-            
-        }
+        System.out.println(endGame(Cli.getName(), answerUser, winTitle, answerRight));
+    }
+    public static String endGame(String name, String answer, boolean winTitle, String correctAnswer) {
+        return winTitle ? "Congratulations, " + name + "!" : "'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'." + "\n" + "Let's try again, " + name + "!";
     }
 }
+
