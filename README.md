@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/NikitaRepeat/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/NikitaRepeat/java-project-61/actions)
-[![Maintainability](<a href="https://codeclimate.com/github/NikitaRepeat/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/70d925888a8dc575da30/maintainability" /></a>)
+<a href="https://codeclimate.com/github/NikitaRepeat/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/70d925888a8dc575da30/maintainability" /></a>
 
 Greet:[here](https://asciinema.org/a/i6ng4vL2xhFsTTB2h8pfenVBe)
 
