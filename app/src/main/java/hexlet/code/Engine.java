@@ -52,15 +52,15 @@ public class Engine {
         boolean runGame = true;
         boolean winTitle = false;
         while (runGame) {
-            if (choiceUser == 2) {
+            if (choiceUser == choice2) {
                 answerRight = Even.evenGame();
-            } else if (choiceUser == 3) {
+            } else if (choiceUser == choice3) {
                 answerRight = Calc.calculator();
-            } else if (choiceUser == 4) {
+            } else if (choiceUser == choice4) {
                 answerRight = GCD.gcdGame();
-            } else if (choiceUser == 5) {
+            } else if (choiceUser == choice5) {
                 answerRight = Progression.proGame();
-            } else if (choiceUser == 6) {
+            } else if (choiceUser == choice6) {
                 answerRight = Prime.primeGame();
             } else {
                 System.out.println("Goodbye!");
@@ -78,7 +78,8 @@ public class Engine {
         System.out.println(endGame(Cli.getName(), answerUser, winTitle, answerRight));
     }
     public static String endGame(String name, String answer, boolean winTitle, String correctAnswer) {
-        return winTitle ? "Congratulations, " + name + "!" : "'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'." + "\n" + "Let's try again, " + name + "!";
+        return winTitle ? "Congratulations, " + name + "!" : "'" + answer + "' is wrong answer ;(. Correct answer was '"
+                + correctAnswer + "'." + "\n" + "Let's try again, " + name + "!";
     }
 }
 

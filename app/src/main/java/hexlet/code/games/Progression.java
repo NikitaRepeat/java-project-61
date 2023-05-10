@@ -3,10 +3,14 @@ package hexlet.code.games;
 import java.util.Arrays;
 
 public class Progression {
+    private static final int BOUND_FOR_FIRST_NUMBER = 10;
+    private static final int BOUND_FOR_DIFFERENCE = 9;
+    private static final int LEFT_NUMBER = 6;
+    private static final int BOUND_FOR_PROGRESSION = 5;
     public static String proGame() {
-        int firstNumber = (int) (1 + Math.random() * 10);
-        int difference = (int) (1 + Math.random() * 9);
-        int[] progression = new int[6 + (int) (Math.random() * 5)];
+        int firstNumber = (int) (1 + Math.random() * BOUND_FOR_FIRST_NUMBER);
+        int difference = (int) (1 + Math.random() * BOUND_FOR_DIFFERENCE);
+        int[] progression = new int[LEFT_NUMBER + (int) (Math.random() * BOUND_FOR_PROGRESSION)];
         String[] progressionString = new String[progression.length];
         progression[0] = firstNumber;
         progressionString[0] = Integer.toString(firstNumber);
