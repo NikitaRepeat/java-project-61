@@ -10,19 +10,25 @@ public class Games {
     private static final int BOUND_FOR_DIFFERENCE = 9;
     private static final int LEFT_NUMBER = 6;
     private static final int BOUND_FOR_PROGRESSION = 5;
+    private static final int CHOICE1 = 1;
+    private static final int CHOICE2 = 2;
+    private static final int CHOICE3 = 3;
+    private static final int CHOICE4 = 4;
+    private static final int CHOICE5 = 5;
+    private static final int CHOICE6 = 6;
     public static String[][] gameClass(int chosenGames) {
         String[][] results = {
                 {"Question: ", "no"}
         };
         StringBuilder sb = new StringBuilder(results[0][0]);
-        if (chosenGames == 2) {
+        if (chosenGames == CHOICE2) {
             int randomNumber = (int) (Math.random() * MULTIPLE);
             sb.append(randomNumber);
             if (randomNumber % 2 == 0) {
                 results[0][1] = "yes";
             }
             System.out.println(sb);
-        } else if (chosenGames == 3) {
+        } else if (chosenGames == CHOICE3) {
             int randomNumber1 = (int) (Math.random() * MULTIPLE);
             int randomNumber2 = (int) (Math.random() * MULTIPLE);
             Random rand = new Random();
@@ -42,7 +48,7 @@ public class Games {
                 results[0][1] = Integer.toString(result);
             }
             System.out.println(sb);
-        } else if (chosenGames == 4) {
+        } else if (chosenGames == CHOICE4) {
             int randomNumber1 = (int) (1 + Math.random() * MULTIPLE);
             int randomNumber2 = (int) (1 + Math.random() * MULTIPLE);
             int gcd = 0;
@@ -54,7 +60,7 @@ public class Games {
             sb.append(randomNumber1).append(" ").append(randomNumber2);
             results[0][1] = Integer.toString(gcd);
             System.out.println(sb);
-        } else if (chosenGames == 5) {
+        } else if (chosenGames == CHOICE5) {
             int firstNumber = (int) (1 + Math.random() * BOUND_FOR_FIRST_NUMBER);
             int difference = (int) (1 + Math.random() * BOUND_FOR_DIFFERENCE);
             int[] progression = new int[LEFT_NUMBER + (int) (Math.random() * BOUND_FOR_PROGRESSION)];
@@ -73,7 +79,7 @@ public class Games {
             results[0][1] = replaceMemberValue;
             sb.append(result);
             System.out.println(sb);
-        } else if (chosenGames == 6) {
+        } else if (chosenGames == CHOICE6) {
             int randPrimeNumber = (int) (2 + Math.random() * MULTIPLE);
             sb.append(randPrimeNumber);
             for (int i = 2; i < randPrimeNumber; i++) {
