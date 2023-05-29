@@ -43,8 +43,8 @@ public class Games {
             }
             System.out.println(sb);
         } else if (chosenGames == 4) {
-            int randomNumber1 = (int) (Math.random() * MULTIPLE);
-            int randomNumber2 = (int) (Math.random() * MULTIPLE);
+            int randomNumber1 = (int) (1 + Math.random() * MULTIPLE);
+            int randomNumber2 = (int) (1 + Math.random() * MULTIPLE);
             int gcd = 0;
             for (int i = 1; i <= randomNumber1 && i <= randomNumber2; i++) {
                 if (randomNumber1 % i == 0 && randomNumber2 % i == 0) {
